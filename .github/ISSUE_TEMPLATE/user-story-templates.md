@@ -1,5 +1,5 @@
 ---
-name: User Story Template
+name: User Story Templates
 about: " a user story template in GitHub that will help you write well-formatted user
   stories for your ZenHub kanban board"
 title: "[User Story]"
