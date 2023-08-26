@@ -19,7 +19,6 @@ DATABASE_URI = os.getenv(
 
 BASE_URL = "/accounts"
 
-
 ######################################################################
 #  T E S T   C A S E S
 ######################################################################
@@ -122,9 +121,6 @@ class TestAccountService(TestCase):
             content_type="test/html"
         )
         self.assertEqual(response.status_code, status.HTTP_415_UNSUPPORTED_MEDIA_TYPE)
-
-    # ADD YOUR TEST CASES HERE ...
-
 
     ######################################################################
     #  Read Account from the service
