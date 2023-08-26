@@ -72,10 +72,11 @@ def list_accounts():
         account_list = [account.serialize() for account in accounts]
         app.logger.info("Returning [%s] accounts", len(account_list))
         return jsonify(account_list), status.HTTP_200_OK
+
+
 ######################################################################
 # READ AN ACCOUNT
 ######################################################################
-# ... place you code here to READ an account ...
 @app.route("/accounts/<int:account_id>", methods=["GET"])
 def get_accounts(account_id):
         """
@@ -87,12 +88,6 @@ def get_accounts(account_id):
         if not account:
             abort(status.HTTP_404_NOT_FOUND, f"Account with id [{account_id}] could not be found.")
         return account.serialize(), status.HTTP_200_OK
-
-def test_get_account_not_found(self):
-        """It should not Read an Account that is not found"""
-        resp = self.client.get(f"{BASE_URL}/0")
-#        resp = self.client.get("/accounts/0")
-        self.assertEqual(resp.status_code, status.HTTP_404_NOT_FOUND)
         
 ######################################################################
 # UPDATE AN EXISTING ACCOUNT
