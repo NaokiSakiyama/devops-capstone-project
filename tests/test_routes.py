@@ -21,7 +21,7 @@ BASE_URL = "/accounts"
 
 # 20230826 NS
 # below BASE_URL = "/accounts"
-HTTPS_ENVIRON = {'wsgi.url_scheme': 'https'}
+#HTTPS_ENVIRON = {'wsgi.url_scheme': 'https'}
 
 ######################################################################
 #  T E S T   C A S E S
