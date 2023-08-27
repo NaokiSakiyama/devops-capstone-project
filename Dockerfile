@@ -15,3 +15,8 @@ USER theia
 # Run the service
 EXPOSE 8080
 CMD ["gunicorn", "--bind=0.0.0.0:8080", "--log-level=info", "service:app"]
+
+##########################
+# Save the URL link to your Dockerfile on GitHub. Just open the file on GitHub and save the URL. You will need to provide this when you submit your evidence.
+##########################
+# https://accounts-sn-labs-sakiyamanaok.labs-prod-openshift-san-a45631dc5778dc6371c67d206ba9ae5c-0000.us-east.containers.appdomain.cloud/
